@@ -350,7 +350,7 @@ function startGame() {
 
     let frames = 0
     let randomInterval = Math.floor((Math.random() * 500) + 500)
-    let imagesHelicopterDeath = ['detail01', 'detail02', 'detail03', 'detail04']
+    let imagesEnemiesDeath = ['detail01', 'detail02', 'detail03', 'detail04']
     let backgroundPlanets = ['planet01', 'planet02', 'planet03', 'planet04', 'planet05', 'planet06']
     let backgroundStars = ['star01', 'star02']
     let game = {
@@ -393,7 +393,7 @@ function startGame() {
                     y: (Math.random() - 0.5) * 2
                 },
                 radius: Math.random() * 3,
-                imagePngName: imagePngName || imagesHelicopterDeath[Math.floor(Math.random() * 4)],
+                imagePngName: imagePngName || imagesEnemiesDeath[Math.floor(Math.random() * 4)],
                 scale: Math.random() * 0.10,
                 fades: fades
             }))
