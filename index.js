@@ -357,8 +357,9 @@ function startGame() {
         over: false,
         active: true
     }
-    createBackgroundParticiple(3, backgroundPlanets, .4, .2);
+
     createBackgroundParticiple(25, backgroundStars, 3, .3, .8);
+    createBackgroundParticiple(3, backgroundPlanets, .4, .2);
 
     function createBackgroundParticiple(frequency, sprites, speed, scale, opacity = 1) {
         for (let i = 0; i < frequency; i++) {
