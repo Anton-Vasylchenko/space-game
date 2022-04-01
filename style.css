@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+}
+.mobile-btn {
+  display: none;
+  justify-content: space-between;
+  background: #000;
+  position: relative;
+  top: -10px;
+  height: 60px;
+  color: white;
+}
+.arrows {
+  display: inline-block;
+  display: flex;
+}
+.m-btn {
+  background: rgb(78, 78, 78);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.m-btn img {
+  object-fit: contain;
+  width: 20px;
+}
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+.gameover {
+  display: none;
+  padding: 50px;
+  margin: auto;
+  margin-top: 100px;
+  z-index: 20;
+  background: white;
+  max-width: 350px;
+  height: auto;
+  font-size: 1.3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.548);
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid rgb(43, 0, 197);
+  color: rgb(43, 0, 197);
+  padding: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: white;
+  border: 2px solid rgb(0, 154, 255);
+  background: blue;
+}
+
+.score {
+  position: absolute;
+  z-index: 10;
+  font-weight: bold;
+  background: white;
+  color: black;
+  top: 10px;
+  padding: 2px;
+  left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .gameover {
+    top: 20%;
+    width: 60%;
+    font-size: 20px;
+  }
+  button {
+    font-size: 18px;
+  }
+}

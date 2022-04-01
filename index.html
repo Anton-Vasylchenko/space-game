@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style></style>
+  <body>
+    <div class="gameover">
+      You were shot!<br />
+      Play one more time?
+      <button id="btn">YES!</button>
+    </div>
+
+    <div class="wrapper">
+      <div class="score"><span>Score: </span> <span class="scoreCount">0</span></div>
+      <canvas></canvas>
+
+      <div class="mobile-btn">
+        <div class="arrows">
+          <p class="m-btn btnLeft">
+            <img src="./img/arrow.png" alt="" />
+          </p>
+          <p class="m-btn btnRight">
+            <img src="./img/arrow-right.png" alt="" />
+          </p>
+        </div>
+        <p class="m-btn btnFire">
+          <img src="./img/shoot.png" alt="" />
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
