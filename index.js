@@ -454,7 +454,7 @@ function startGame() {
                 createParticiple({
                     object: player,
                     color: 'white',
-                    imagePngName: 'mig29detail',
+                    imagePngName: 'player29detail',
                     fades: true
                 })
             }
@@ -497,7 +497,7 @@ function startGame() {
                                 return projectible2 === p
                             })
 
-                            // remove helicopters and projectibles
+                            // remove enemies and projectibles
                             if (invaderFound && projectibleFound) {
 
                                 score += 1;
